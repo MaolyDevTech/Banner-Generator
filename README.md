@@ -60,4 +60,5 @@ Descanse em paz, querido Danien.
 ![Luis](https://github.com/MaolyDevTech/Banner-Generator/assets/144358009/27edc2e3-9914-49db-b535-2e77f370b4d1)
 
 #### Mensagem Commemorativa para Luis Danien Suárez (ML):
-![fondo](https://github.com/MaolyDevTech/Banner-Generator/assets/144358009/76e66fe7-996c-4192-99f5-2e94c825bae7)
+
+![danien](https://github.com/MaolyDevTech/Banner-Generator/assets/144358009/b1014f00-f2e5-4e69-8b17-27d7cf5a785e)
