@@ -1,0 +1,39 @@
+from PIL import Image
+import matplotlib.pyplot as plt
+from google.colab import files
+from IPython.display import display
+
+def lembrar_luis_daniel():
+    mensagem = ("Em memória de Luis Daniel:\n"
+                "Seu espírito vive nas\n"
+                "lembranças e no coração daqueles\n"
+                 "que o conheceram.\n"
+                "Que sua luz continue a brilhar\n"
+                "em nossas recordações.\n"
+                "ML")
+
+    print(mensagem)
+
+    # Carregar a imagem alusiva
+    uploaded = files.upload()
+    for name, data in uploaded.items():
+        with open(name, 'wb') as f:
+            f.write(data)
+    imagem = Image.open(name)
+
+    # Calcular a posição do texto para ficar no centro da imagem
+    width, height = imagem.size
+    text_width, text_height = plt.text(0, 0, mensagem, fontsize=12).get_window_extent().size
+    text_x = (width - text_width) / 2
+    text_y = (height - text_height) / 2
+
+    # Criar um banner com a imagem e a mensagem
+    plt.figure(figsize=(8, 6))
+    plt.imshow(imagem)
+    plt.axis('off')  # Desabilitar eixos
+    plt.text(text_x, text_y, mensagem, fontsize=12, color='white', ha='left', va='top', wrap=True)
+    plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)  # Adicionar preenchimento
+    plt.show()
+
+if __name__ == "__main__":
+    lembrar_luis_daniel()
